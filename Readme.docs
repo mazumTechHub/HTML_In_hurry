@@ -1,0 +1,351 @@
+"HTML in a Hurry: Building Your First Webpage" - MazumTech Hub
+
+
+What is HTML?
+
+Definition: HyperText Markup Language
+Purpose: The foundation of all web pages; structure and content.
+Analogy: Like the skeleton of a building – it holds everything together.
+Visual: Show a simple website screenshot and highlight the different sections.
+
+Basic HTML Structure
+
+<!DOCTYPE html>: Tells the browser it's an HTML5 document.
+<html>: The root element, containing everything.
+<head>: Metadata (information about the page).
+<body>: The visible content of the page.
+
+Visual: 
+		
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>My Webpage</title>
+      </head>
+      <body>
+        
+      </body>
+    </html>
+
+
+  I. Document Structure Tags
+    These tags define the overall structure of your HTML document.
+    <!DOCTYPE html>: Declaration that defines the document type and version of HTML being used (HTML5).
+
+    <html >: The root element of an HTML page. All other elements are descendants of this tag.
+
+    <head>: Contains meta-information about the HTML document, such as the title, character set, linked stylesheets, etc. This information is not displayed on the page itself.
+      <head>
+        <title>My Webpage</title>
+        <meta charset="UTF-8">
+      </head>
+
+
+    <body>: Contains the visible page content (text, images, videos, etc.).
+      <body>
+        <h1>Welcome to my website!</h1>
+      </body>
+
+      <tags>: these are the tags.
+
+  II. Text Content Tags
+    <h1> to <h6>: Heading tags. These tags are used to structure and format text content.
+    <h1> represents the most important heading, 
+    while <h6> represents the least important.
+
+    <h1>Main Heading</h1>
+    <h2>Subheading</h2>
+    <h3>Section Heading</h3>
+
+    <p>: Paragraph tag. Used to define a block of text.
+      <p>This is a paragraph of text. It can contain multiple sentences.</p>
+
+    <a>: Anchor tag. Creates a hyper-link to other web pages or resources.
+      <a href="https://www.google.com">Visit Example</a>
+
+    <span>: Inline container used to mark up a part of a text or a part of a document. It has no required attributes, but style and class are common.
+      <p>
+        This is a 
+        <span style="color:red;">
+          red
+        </span>
+         word.
+      </p>
+
+    <b>Bold</b>
+    <strong>: Defines important text (usually displayed as bold).
+      <p>This is <strong>important</strong> text.</p>
+
+    <i>italic</i>
+    <em>: Defines emphasized text (usually displayed as italic).
+      <p>This is <em>emphasized</em> text.</p>
+
+    <br>: Line break. Inserts a single line break.
+      <p>
+        This is the first line.
+        <br>
+        This is the second line.
+      </p>
+
+
+
+  III. List Tags
+  These tags are used to create ordered and unordered lists.
+    <ul>: Unordered list (bulleted list).
+
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+
+
+    <ol>: Ordered list (numbered list).
+    
+      <ol>
+        <li>First step</li>
+        <li>Second step</li>
+        <li>Third step</li>
+      </ol>
+
+
+    <li>: List item. Defines an item within a list (<ul> or <ol>).
+
+
+  IV. Media Tags
+    These tags are used to embed multimedia content.
+    <img>: Image tag. Embeds an image in the document.
+
+      <img src="myimage.jpg" alt="Description of my image">
+
+
+    <video>: Video tag. Embeds a video in the document.
+    
+      <video width="320" height="240" controls>
+          <source src="myvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+
+
+    <audio>:1 Audio tag. Embeds audio content in the document.
+
+    <audio controls>
+        <source src="myaudio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+  V. Structural Tags
+    These tags are used to define sections and structure of the HTML document.
+    <div>: Division tag. Defines a section or division in an HTML document. Often used as a container for other elements.
+
+      <div id="header">
+          <h1>Website Header</h1>
+      </div>
+      <div class="content">
+          <p>Some content here.</p>
+      </div>
+
+      <div> xyz </ div>
+
+      <header>: Represents the header of a section or page.
+
+        <header>
+            <h1>Website Title</h1>
+            <nav>...</nav>
+        </header>
+
+
+      <footer>: Represents the footer of a section or page.
+
+        <footer>
+            <p>Copyright 2024</p>
+        </footer>
+
+
+      <nav>: Represents a section of navigation links.
+      
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+
+      <article>: Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication).
+
+        <article>
+            <h2>Article Title</h2>
+            <p>Article content...</p>
+        </article>
+
+
+      <section>: Represents a thematic grouping of content, typically with a heading.
+
+        <section>
+            <h2>Section Title</h2>
+            <p>Section content...</p>
+        </section>
+
+
+  VI. Table Tags
+    These tags are used to create tables for displaying tabular data.
+    <table>: Defines a table.
+
+        <table>
+            <tr>
+                <th>Name</th>                 <th>Age</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>             <td>30</td>
+            </tr>
+        </table>
+
+
+      <tr>: Table row. Defines a row in a table.
+      <th>: Table header. Defines a header cell in a table.
+      <td>: Table data. Defines a data cell in a table.
+
+
+  VII. Form Tags
+    These tags are used to create HTML forms for user input.
+    <form>: Defines an HTML form for user input.
+    
+      <form action="/submit" method="post">
+          <label for="name">Name:</label>
+          <br>
+          <input type="text" id="name" name="name">
+          <br>
+          <input type="submit" value="Submit">
+
+          <button type="submit">Submit</button>
+      </form>
+
+
+      <input>: Defines an input field for user input (text, password, checkbox, radio button, etc.).
+      <label>: Defines a label for an input element.
+      <button>: Defines a clickable button.
+
+
+
+Comments:
+
+<!-- This is an HTML comment -->
+
+------------------------------------------------------------------------------------------------------
+
+1. Elements
+      In HTML, an element is a piece of content in an HTML document. It is defined by a start tag, some content, and an end tag.
+      Start Tag: Marks the beginning of the element (e.g., <p>).
+      Content: The actual text, images, or other elements within the element.
+      End Tag: Marks the end of the element (e.g., </p>).
+
+
+      <p>
+        This is a paragraph element.
+      </p>
+
+      <h1>
+        This is a heading element.
+      </h1>
+
+
+2. Nesting Tags and Elements
+      Nesting means placing one HTML element inside another. This creates a hierarchical structure in your document. Proper nesting is crucial for correct HTML.
+      Correct Nesting:
+        <div>
+            <p>This paragraph is inside a div.</p>
+        </div>
+
+
+      Incorrect Nesting (Overlapping):
+        <div>
+            <p>This is <div>incorrect</div> nesting.</p>
+        </div>
+
+
+      In the incorrect example, the <div> tag is opened inside the <p> tag but closed outside. This will lead to unpredictable behavior and must be avoided.
+
+
+3. Attributes
+        Attributes provide additional information about HTML elements. They are always specified in the start tag of an element and consist of a name and a value.
+
+        Syntax: attribute_name="attribute_value"
+
+        <a href="https://www.example.com" target="_blank">Visit Example</a>
+        <img src="image.jpg" alt="A descriptive image" width="500" height="300">
+
+
+      Common Attributes:
+      href: Specifies the URL of a link (<a>).
+      src: Specifies the source of an image (<img>), video (<video>), or audio (<audio>).
+      alt: Specifies alternative text for an image (<img>). Important for accessibility.
+      width and height: Specify the width and height of an image or video.
+      class: Specifies one or more class names for an element. Used for styling with CSS.
+      id: Specifies a unique ID for an element. Used for styling with CSS or scripting with JavaScript.
+      style: Specifies inline styles for an element (less recommended, prefer external CSS).
+      title: Provides a tooltip when hovering over the element.
+
+
+4. Void Elements (Self-Closing Tags)
+    Void elements, also known as self-closing tags or empty elements, do not have closing tags. They only have a start tag and usually use a trailing slash / .
+        Examples:
+        <br>: Line break.
+        <hr>: Horizontal rule (line).
+        <img>: Image.
+        <input>: Input field.
+        <meta>: Metadata.
+        <link>: Links external resources (like CSS stylesheets).
+      Example:
+        <br />
+        <hr /> 
+        <img src="image.jpg" alt="Image" />
+        <input type="text" name="username" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+
+
+5. Entities (Character Entities or HTML Entities)
+      HTML entities are used to display reserved characters in HTML that would otherwise be interpreted as HTML code. They are also useful for displaying characters that are not easily typed on a keyboard.
+      
+      Syntax: 	&entity_name;         or         &#entity_number;
+
+          Common Entities:
+          <: Less than (<)
+          >: Greater than (>)
+          &: Ampersand (&)
+          ": Double quote (")
+          ': Apostrophe (')
+          : Non-breaking space
+
+      <p>10 < 20</p>
+      <p>This is a "quoted" string.</p> 
+      <p>This is a "quoted" string.</p> 
+      <p>This   is   spaced   out.</p>
+
+                                                           
+**Element**:  A piece of content with start and end tags.
+<p>This is a paragraph.</p>  
+
+**Nesting**:  Placing elements inside other elements.
+<div>
+  <p>
+    Nested content
+  </p>
+</div>
+
+
+**Attribute**:  Provides extra information about an element; in the start tag.
+<img src="pic.jpg" alt="Picture">                              
+
+**Void Element**:  Element with no closing tag.
+<br>
+<img src="image.jpg">                                     
+
+**Entity**: 
+Used to display reserved characters or characters not easily typed. `<` (less than), `&` (ampersand)                             
+
+Understanding these concepts is fundamental to writing correct and well-structured HTML. They form the basis for creating any webpage.
+
+
+This list covers the major and most commonly used HTML tags. There are other tags, but these are the ones you'll encounter most frequently and are essential for building basic web pages. Remember to use these tags semantically, meaning use them for their intended purpose to create well-structured and accessible HTML.
